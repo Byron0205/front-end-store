@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Front-end Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logo del sitio">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main>
+        <h1>Producto</h1>
+
+        <div class="camisa contenedor">
+            <img class="camisa__img" src="img/3.jpg" alt="camisa">
+            <div class="camisa__contenido">
+                <p>Fusce aliquet semper nibh ac commodo. Nulla in odio quis metus ornare bibendum. 
+                    Proin pharetra non risus a venenatis. Nam viverra at dui sit amet malesuada. 
+                    Nam feugiat velit in felis viverra viverra. Cras eu fringilla nibh. Suspendisse 
+                    molestie maximus est, et vehicula nulla euismod nec. Pellentesque vitae quam 
+                    rutrum, ornare erat at, tempor risus. Pellentesque fringilla est non sodales 
+                    fermentum. Aliquam magna elit, ultrices eu turpis in, vulputate elementum urna. 
+                    Quisque iaculis blandit eros eu rutrum. Integer nec scelerisque est, bibendum pretium velit.</p>
+
+                <p>In lobortis lorem id rhoncus ornare. Morbi commodo lacus ac libero feugiat, at ultricies ex ultrices. 
+                    Vivamus tincidunt dolor at tempus faucibus. Sed rhoncus diam vel ex maximus feugiat</p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Talla --</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="cantidad" min=1>
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los Derechos Reservados 2022</p>
+    </footer>
+</body>
+</html>
